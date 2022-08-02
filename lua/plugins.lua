@@ -38,4 +38,8 @@ return require('packer').startup(function(use)
 
   use {'akinsho/toggleterm.nvim'}
 
+  use {'akinsho/git-conflict.nvim', config = function()
+    require('git-conflict').setup()
+  end}
+
 end)

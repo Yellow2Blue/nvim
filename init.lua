@@ -2,7 +2,6 @@ require('editor')
 require('plugins')
 require('lsp')
 require('mapping')
-require('fold')
 
 require('plugin-config.treesitter')
 require('plugin-config.autopairs')
