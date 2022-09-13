@@ -11,3 +11,7 @@ vim.o.shiftwidth = 2
 vim.o.tabstop = 2
 vim.o.softtabstop = 2
 ---vim.o.smartindent = true
+--
+vim.wo.foldmethod = "expr"
+vim.wo.foldexpr = "nvim_treesitter#foldexpr()"
+

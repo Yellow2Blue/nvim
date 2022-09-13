@@ -38,4 +38,9 @@ return require('packer').startup(function(use)
 
   use {'akinsho/toggleterm.nvim'}
 
+  use {'lervag/vimtex'}
+
+  use {'frabjous/knap'}
+
+  use {'nvim-orgmode/orgmode'}
 end)

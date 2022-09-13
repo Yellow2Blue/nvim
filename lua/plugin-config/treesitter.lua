@@ -1,6 +1,9 @@
 require('nvim-treesitter.configs').setup {
-    ensure_installed = { "norg", --[[ other parsers you would wish to have ]] },
-    highlight = { -- Be sure to enable highlights if you haven't!
-        enable = true,
-    }
+  -- If TS highlights are not enabled at all, or disabled via `disable` prop, highlighting will fallback to default Vim syntax highlighting
+  highlight = {
+    enable = true,
+    additional_vim_regex_highlighting = {'org'}, -- Required for spellcheck, some LaTex highlights and code block highlights that do not have ts grammar
+  },
+  ensure_installed = {'org', 'c', 'cpp', 'rust', 'go'}, -- Or run :TSUpdate org
+  auto_install = true,
 }

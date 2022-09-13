@@ -94,6 +94,16 @@ _G.packer_plugins = {
     path = "/Users/yellowblue/.local/share/nvim/site/pack/packer/start/diffview.nvim",
     url = "https://github.com/sindrets/diffview.nvim"
   },
+  ["glow.nvim"] = {
+    loaded = true,
+    path = "/Users/yellowblue/.local/share/nvim/site/pack/packer/start/glow.nvim",
+    url = "https://github.com/ellisonleao/glow.nvim"
+  },
+  knap = {
+    loaded = true,
+    path = "/Users/yellowblue/.local/share/nvim/site/pack/packer/start/knap",
+    url = "https://github.com/frabjous/knap"
+  },
   ["lazygit.nvim"] = {
     loaded = true,
     path = "/Users/yellowblue/.local/share/nvim/site/pack/packer/start/lazygit.nvim",
@@ -129,6 +139,11 @@ _G.packer_plugins = {
     path = "/Users/yellowblue/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
+  orgmode = {
+    loaded = true,
+    path = "/Users/yellowblue/.local/share/nvim/site/pack/packer/start/orgmode",
+    url = "https://github.com/nvim-orgmode/orgmode"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/Users/yellowblue/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -154,6 +169,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/yellowblue/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
     url = "https://github.com/akinsho/toggleterm.nvim"
+  },
+  vimtex = {
+    loaded = true,
+    path = "/Users/yellowblue/.local/share/nvim/site/pack/packer/start/vimtex",
+    url = "https://github.com/lervag/vimtex"
   }
 }
 
