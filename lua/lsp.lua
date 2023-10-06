@@ -13,7 +13,7 @@ local on_attach = function(_, bufnr)
 end
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
-capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
+capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
 
 local servers = {'clangd', 'rust_analyzer', 'cmake', 'gopls', 'pyright', 'texlab'}
 for _, lsp in ipairs(servers) do
@@ -22,6 +22,18 @@ for _, lsp in ipairs(servers) do
 		capabilities = capabilities,
 	}
 end
+
+require("mason").setup()
+require("mason-lspconfig").setup()
+-- After setting up mason-lspconfig you may set up servers via lspconfig
+-- require("lspconfig").lua_ls.setup {}
+-- require("lspconfig").rust_analyzer.setup {}
+require'lspconfig'.typst_lsp.setup{
+	settings = {
+		exportPdf = "onType" -- Choose onType, onSave or never.
+        -- serverPath = "" -- Normally, there is no need to uncomment it.
+	}
+}
 
 vim.o.completeopt = 'menuone,noselect'
 
