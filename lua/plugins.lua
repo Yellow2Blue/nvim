@@ -8,8 +8,6 @@ return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
-  use { 'TimUntersberger/neogit', requires = 'nvim-lua/plenary.nvim' }
-
   use {'sindrets/diffview.nvim'}
 
   use {'windwp/nvim-autopairs'}
@@ -37,9 +35,6 @@ return require('packer').startup(function(use)
   use {'L3MON4D3/LuaSnip'}
 
   use {'akinsho/toggleterm.nvim'}
-
-  use {'lervag/vimtex'}
-  use {'nvim-orgmode/orgmode'}
 
   use {
     "williamboman/mason.nvim",

@@ -28,7 +28,7 @@ require("mason-lspconfig").setup()
 -- After setting up mason-lspconfig you may set up servers via lspconfig
 -- require("lspconfig").lua_ls.setup {}
 -- require("lspconfig").rust_analyzer.setup {}
-require'lspconfig'.typst_lsp.setup{
+require'lspconfig'.tinymist.setup{
 	settings = {
 		exportPdf = "onType" -- Choose onType, onSave or never.
         -- serverPath = "" -- Normally, there is no need to uncomment it.

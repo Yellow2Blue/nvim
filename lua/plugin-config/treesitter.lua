@@ -4,6 +4,6 @@ require('nvim-treesitter.configs').setup {
     enable = true,
     additional_vim_regex_highlighting = {'org'}, -- Required for spellcheck, some LaTex highlights and code block highlights that do not have ts grammar
   },
-  ensure_installed = {'org', 'c', 'cpp', 'rust', 'go'}, -- Or run :TSUpdate org
+  ensure_installed = {'c', 'cpp', 'rust', 'python', 'cuda'}, -- Or run :TSUpdate org
   auto_install = true,
 }
