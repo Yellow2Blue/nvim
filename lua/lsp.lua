@@ -15,7 +15,7 @@ end
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
 
-local servers = {'clangd', 'rust_analyzer', 'cmake', 'gopls', 'pyright', 'texlab'}
+local servers = {'clangd', 'rust_analyzer', 'cmake', 'pyright',}
 for _, lsp in ipairs(servers) do
 	nvim_lsp[lsp].setup {
 		on_attach = on_attach,
